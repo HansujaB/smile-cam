@@ -14,18 +14,19 @@ A fun and intelligent React + Flask web app that auto-captures your smiles and t
 
 ---
 🧩 Tech Stack
-Layer	Stack
-Frontend	React, react-webcam, html2canvas
-Backend	Flask, Flask-CORS, OpenCV (Haarcascade)
-Image Processing	Grayscale face & smile detection
+| Layer            | Stack                                   |
+| ---------------- | --------------------------------------- |
+| Frontend         | React, react-webcam, html2canvas        |
+| Backend          | Flask, Flask-CORS, OpenCV (Haarcascade) |
+| Image Processing | Grayscale face & smile detection        |
 
 ---
 
 💡 Features
-Hands-free photo capture via smile detection
-Smooth UX with auto-progression and reset option
-Fun, customizable messages with blinking cursor effect
-Zero authentication or storage — fast and private
+-Hands-free photo capture via smile detection
+-Smooth UX with auto-progression and reset option
+-Fun, customizable messages with blinking cursor effect
+-Zero authentication or storage — fast and private
 
 ---
 
