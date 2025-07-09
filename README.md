@@ -28,16 +28,16 @@ A fun and intelligent React + Flask web app that auto-captures your smiles and t
 3. Repeat until 3 photos are captured ✨
 4. Add a caption (or not, we won’t judge 😎)
 5. Preview and download your custom photo strip 🎉
-
 ---
 
-## 🛠️ Local Setup
+🤩 Future Ideas
+1. Add filters or frames to photos
+2. Allow choosing layout (3x1 or 1x3)
+3. Share to social media directly
+---
+## 🧊 Made With
+Love ❤️, Laughter 😂, and a little bit of Machine Learning 🧠
+---
+## 🐣 Inspired by
+Polaroid cameras, vintage photo booths, and your most genuine smile.
 
-### Backend (Flask + OpenCV)
-
-```bash
-cd backend
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-pip install flask flask-cors opencv-python
-python app.py
