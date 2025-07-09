@@ -36,7 +36,7 @@ A fun and intelligent React + Flask web app that auto-captures your smiles and t
 3. Share to social media directly
 ---
 ## 🧊 Made With
-Love ❤️, Laughter 😂, and a little bit of Machine Learning 🧠
+Love ❤️, Laughter 😂, and a little bit of Machine Learning 🧠.
 ---
 ## 🐣 Inspired by
 Polaroid cameras, vintage photo booths, and your most genuine smile.
