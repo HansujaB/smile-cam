@@ -22,6 +22,8 @@ def predict_smile():
         #then we we will convert img_data (binary) to a numpy array 
         #now we will decode the numpy array 
         img_data = base64.b64decode(data['image'].split(',')[1])
+        if not img_data:
+            return {"error": "No image data"}, 400
         np_arr = np.frombuffer(img_data, np.uint8)
         img = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
 
@@ -46,14 +48,18 @@ def predict_smile():
                 scaleFactor=1.8,
                 minNeighbors=20
             )
-            if len(smiles)==len(faces):
+            if len(smiles)>0:
                 return jsonify({'smile': True})
 
         return jsonify({'smile': False})
 
     except Exception as e:
         print("Error:", e)
-        return jsonify({'error': 'Error processing image'}), 500
+        return jsonify({'error': f'Error processing image: {str(e)}'}), 500
+
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({'status': 'healthy'})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True , host='0.0.0.0', port=5000)
