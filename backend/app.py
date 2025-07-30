@@ -62,4 +62,7 @@ def health_check():
     return jsonify({'status': 'healthy'})
 
 if __name__ == '__main__':
-    app.run(debug=True , host='0.0.0.0', port=5000)
+    print("Starting Flask server on http://0.0.0.0:5001")
+    print("Health check endpoint: http://localhost:5001/health")
+    print("Smile detection endpoint: http://localhost:5001/predict")
+    app.run(debug=True, host='0.0.0.0', port=5001, threaded=True)

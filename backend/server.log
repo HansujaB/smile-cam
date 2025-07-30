@@ -1,0 +1,8 @@
+nohup: ignoring input
+Starting Flask server on http://0.0.0.0:5000
+Health check endpoint: http://localhost:5000/health
+Smile detection endpoint: http://localhost:5000/predict
+ * Serving Flask app 'app'
+ * Debug mode: on
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.

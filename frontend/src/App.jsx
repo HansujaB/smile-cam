@@ -21,7 +21,7 @@ const PhotoboothApp = () => {
   // Check backend connection
   const checkBackendConnection = async () => {
     try {
-      const response = await fetch('http://localhost:5000/health');
+      const response = await fetch('http://localhost:5001/health');
       if (response.ok) {
         setIsBackendConnected(true);
         setError('');
@@ -31,14 +31,14 @@ const PhotoboothApp = () => {
       }
     } catch (error) {
       setIsBackendConnected(false);
-      setError('Cannot connect to backend server. Make sure Flask server is running on port 5000.');
+      setError('Cannot connect to backend server. Make sure Flask server is running on port 5001.');
     }
   };
 
   // Check for smile using backend
   const checkForSmile = async (imageData) => {
     try {
-      const response = await fetch('http://localhost:5000/predict', {
+      const response = await fetch('http://localhost:5001/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
